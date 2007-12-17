@@ -12,7 +12,6 @@ URL:		http://www.nlnetlabs.nl/dns-analyzer/
 Source0:	http://www.nlnetlabs.nl/dns-analyzer/%{name}-%{version}.tar.bz2
 BuildRequires:	libpcap-devel
 BuildRequires:	libstdc++-devel
-BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 The DNS Analyzer is a tool to analyze DNS traffic from
