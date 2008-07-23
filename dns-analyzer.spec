@@ -1,6 +1,6 @@
 %define name	dns-analyzer
 %define version	0.3.0
-%define release	%mkrel 4
+%define release	%mkrel 6
 
 Summary:	Analyze DNS traffic from tcpdump trace files
 Name:		%{name}
