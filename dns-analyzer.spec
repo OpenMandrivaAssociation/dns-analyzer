@@ -6,6 +6,7 @@ Group:		Networking/Other
 License:	GPL
 URL:		http://www.nlnetlabs.nl/dns-analyzer/
 Source0:	http://www.nlnetlabs.nl/dns-analyzer/%{name}-%{version}.tar.bz2
+Patch0:		dns-analyzer-0.3.0-gcc43.diff
 BuildRequires:	libpcap-devel
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -24,6 +25,7 @@ that can be found in the source distribution.
 %prep
 
 %setup -q
+%patch0 -p1
 
 %build
 
@@ -32,14 +34,14 @@ that can be found in the source distribution.
 %make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %makeinstall
 
 install -m0755 packet2c %{buildroot}%{_bindir}/
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr (-,root,root)
@@ -47,5 +49,3 @@ install -m0755 packet2c %{buildroot}%{_bindir}/
 %{_bindir}/dns-analyzer
 %{_bindir}/packet2c
 %{_mandir}/man1/dns-analyzer.1*
-
-
