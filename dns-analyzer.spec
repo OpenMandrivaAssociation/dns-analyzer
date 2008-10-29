@@ -1,18 +1,14 @@
-%define name	dns-analyzer
-%define version	0.3.0
-%define release	%mkrel 6
-
 Summary:	Analyze DNS traffic from tcpdump trace files
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		dns-analyzer
+Version:	0.3.0
+Release:	%mkrel 7
 Group:		Networking/Other
 License:	GPL
 URL:		http://www.nlnetlabs.nl/dns-analyzer/
 Source0:	http://www.nlnetlabs.nl/dns-analyzer/%{name}-%{version}.tar.bz2
 BuildRequires:	libpcap-devel
 BuildRequires:	libstdc++-devel
-BuildRoot:	%{_tmppath}/%{name}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The DNS Analyzer is a tool to analyze DNS traffic from
