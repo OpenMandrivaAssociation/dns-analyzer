@@ -1,7 +1,7 @@
 Summary:	Analyze DNS traffic from tcpdump trace files
 Name:		dns-analyzer
 Version:	0.3.0
-Release:	%mkrel 7
+Release:	%mkrel 8
 Group:		Networking/Other
 License:	GPL
 URL:		http://www.nlnetlabs.nl/dns-analyzer/
