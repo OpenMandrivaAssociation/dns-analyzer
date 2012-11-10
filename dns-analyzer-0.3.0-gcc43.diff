@@ -1,0 +1,44 @@
+diff -Naur dns-analyzer-0.3.0/src/main.cc dns-analyzer-0.3.0.oden/src/main.cc
+--- dns-analyzer-0.3.0/src/main.cc	2003-03-04 15:27:34.000000000 +0100
++++ dns-analyzer-0.3.0.oden/src/main.cc	2008-10-29 14:46:12.000000000 +0100
+@@ -29,6 +29,7 @@
+ #include <sstream>
+ #include <stdexcept>
+ #include <unistd.h>
++#include <cstring>
+ 
+ using namespace dns_analyzer;
+ 
+diff -Naur dns-analyzer-0.3.0/src/packet.cc dns-analyzer-0.3.0.oden/src/packet.cc
+--- dns-analyzer-0.3.0/src/packet.cc	2003-03-10 11:48:22.000000000 +0100
++++ dns-analyzer-0.3.0.oden/src/packet.cc	2008-10-29 14:49:18.000000000 +0100
+@@ -26,6 +26,7 @@
+ #include <ostream>
+ #include <stdexcept>
+ #include <sstream>
++#include <cstring>
+ 
+ #include <arpa/inet.h>
+ #include <arpa/nameser.h>
+diff -Naur dns-analyzer-0.3.0/src/packet-dns.cc dns-analyzer-0.3.0.oden/src/packet-dns.cc
+--- dns-analyzer-0.3.0/src/packet-dns.cc	2003-03-03 13:27:21.000000000 +0100
++++ dns-analyzer-0.3.0.oden/src/packet-dns.cc	2008-10-29 14:49:41.000000000 +0100
+@@ -26,6 +26,7 @@
+ #include <stdexcept>
+ #include <arpa/inet.h>
+ #include <arpa/nameser.h>
++#include <cstring>
+ 
+ namespace dns_analyzer {
+ 
+diff -Naur dns-analyzer-0.3.0/src/pcap.cc dns-analyzer-0.3.0.oden/src/pcap.cc
+--- dns-analyzer-0.3.0/src/pcap.cc	2003-03-07 13:14:05.000000000 +0100
++++ dns-analyzer-0.3.0.oden/src/pcap.cc	2008-10-29 14:50:01.000000000 +0100
+@@ -20,6 +20,7 @@
+ 
+ #include <algorithm>
+ #include <cassert>
++#include <cstring>
+ 
+ namespace dns_analyzer {
+ 
