@@ -4,7 +4,7 @@ Version:	0.3.0
 Release:	10
 Group:		Networking/Other
 License:	GPL
-URL:		http://www.nlnetlabs.nl/dns-analyzer/
+URL:		https://www.nlnetlabs.nl/dns-analyzer/
 Source0:	http://www.nlnetlabs.nl/dns-analyzer/%{name}-%{version}.tar.bz2
 Patch0:		dns-analyzer-0.3.0-gcc43.diff
 BuildRequires:	libpcap-devel
